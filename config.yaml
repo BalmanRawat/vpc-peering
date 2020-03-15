@@ -1,0 +1,16 @@
+defaults: &defaults
+  account: 574574226067
+  region: us-east-1
+  profile: staging
+
+peering-name: "platform-env-platform-env"
+peeringId: ""
+requester:
+  <<: *defaults
+  vpcId: "vpc-09a7ccef04f9f6d72"
+
+accepter:
+  <<: *defaults
+  vpcId: "vpc-05d36d08916c83a9f"
+  profile: "flowproduction"
+  account: 540741937118
